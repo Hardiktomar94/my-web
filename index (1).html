@@ -1,0 +1,685 @@
+<html>
+    <head>
+        <meta name = "viewport" content ="width=device-width, initial-scale=1.0" >
+       </head> <body>
+           
+            
+         <style>
+              body{margin:0;
+              padding: 0;
+                background: #020024;
+background: linear-gradient(90deg, rgba(2, 0, 36, 1) 100%, rgba(9, 9, 121, 1) 100%, rgba(0, 212, 255, 1) 100%);
+outline: solid red 1px;
+            }
+            .navigation {
+            
+                background: #080767;
+background: linear-gradient(90deg, rgba(8, 7, 103, 1) 0%, rgba(3, 1, 47, 1) 0%, rgba(3, 1, 44, 1) 4%, rgba(23, 23, 110, 1) 100%, rgba(2, 0, 36, 1) 97%, rgba(9, 9, 121, 1) 99%, rgba(0, 212, 255, 1) 100%);
+z-index: 1000;
+
+                padding:10px 20px;
+                display: flex;  
+        font-family: Georgia;  
+        font-size: 20px;
+        align-items:center;}
+        
+        .navigation p{
+            margin:0;
+            font-size:15px;
+            margin-right:10px;
+            margin-left: auto; 
+            color: white;}
+        .logo-space{
+            width:30px;
+            
+            
+        }
+        .logo-img{ width: 30px;
+        height: 30px;
+        top:10px;
+        margin-right:10px;
+        }
+        .menu-icon{
+        font-size:20px;
+        cursor
+        :pointer;       
+        color: white; 
+        }
+        #menu-toggle{
+            display:none;
+        }
+        #menu-toggle:checked ~.menu {
+            left:-0%;
+        }
+        .menu{
+            background: #020024;
+background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(18, 18, 77, 0.75) 27%, rgba(0, 212, 255, 1) 100%);
+position: fixed;
+left: -150px;
+
+transition: 0.3s;
+padding-top: 50px;
+top: 0;
+width: 150px;
+height: 70vh;
+display: flex;
+flex-direction: column;
+z-index:999;
+overflow-y: auto;
+scroll-behaviour: smooth;
+   }
+   .menu a{ display: block;
+   color: white;
+   padding: 10px;
+   font-family: Georgia;
+   }
+       .menu a:nth-last-child(2){
+           margin-top: auto;
+       }
+       .menu a:hover{ background:#222;}
+       
+       .close-btn {position: absolute;
+           width:auto;
+           height:auto;
+           cursor:pointer;
+         right:10px;   
+         top: 10px;
+         color: white;  
+         font-weight: bold;
+         font-size: 30px;
+       }
+       
+        .image-container {position:relative;
+          width:100%;
+        left:0px;  }
+          .image-container img{position: absolute;
+          width:100%;
+          height:50px;
+          margin:20px auto;}
+          
+          .image-container button{ position: absolute;
+          top: 20px;
+          left: 20px;
+          background-color: Orange;
+          color: White;
+          padding:10px 20px;
+          cursor: pointer;
+          border-radius: 25px;
+          font-weight: bold;
+          }
+          
+          .image-container button a {
+              color: white;}
+          
+         .box {
+         width: 100%;
+         height: 40vh;
+		 min-height:250px;
+		 
+             max-height:300px:
+         object-fit: cover;
+         z-index:1;
+         background-image:url("file:///storage/emulated/0/Download/images (21).jpeg");
+             background-size: cover;
+             background-position: center;
+             position: relative;
+             top: 10px;
+             background-size: cover;
+             animation-name:myanimation;
+             animation-timing-function: ease-in-out;
+             animation-duration: 12s;
+             animation-iteration-count: infinite;
+         }
+         @keyframes myanimation {
+             0%{background-image:url("images (21).jpeg")}
+        25%{background-image:url("images (22).jpeg")}
+        
+        50%{background-image:url("images (25).jpeg")}
+        
+        75%{background-image:url("images (26).jpeg")}}
+     
+       .table-container{position: relative;
+        top:10px;
+        font-size:20px;
+        Font-family: Georgia;
+        background-color: Pink;
+        }
+        table{
+            width: 100%;
+          
+            
+        }
+           .footer{
+               background: #12124d;
+background: linear-gradient(90deg, rgba(18, 18, 77, 0.75) 0%, rgba(146, 146, 209, 1) 0%, rgba(0, 0, 0, 1) 100%, rgba(18, 18, 77, 1) 100%);
+width: 100%;
+height: 100px;
+align-items: center;
+z-index: 1;
+           }
+           .footer-link{
+              color: White;
+              font-family:Georgia;
+              text-decoration: none;
+              padding: 10px;
+              gap:40px;
+              display:flex;
+              justify-content: Center;
+              margin-top: 10px;}
+              .footer-link:hover{ 
+                  text-decoration:underline;
+                 
+              }
+
+              
+              .Aims{background: orange;
+              width:auto;
+              height:15px;
+              padding:10px;
+              font-weight: bold;
+                 color: white;
+                 border: 2px solid;
+                 margin-top: 10px;
+                  
+                     text-align: center; }
+                     
+                     .Vision p{
+                         border:2px Solid orange; width:auto;
+                         padding:4px;
+                         z-index: 998;
+                         text-align: center;
+                         color: white;
+                         
+                     }
+                     .para1{
+                         color: white; 
+                         font-style: italian;
+                        
+                         margin-top: 10px;
+                     }
+                     .slider { display: flex;
+                     width: 75%;         
+                     height: 250px;                         
+                     justify-content: center;
+                     gap: 20px;
+                     margin: 20px auto;
+                     position: relative;}
+             
+                    
+                     
+.slider:hover .slide{
+    flex:1;
+    
+}
+.slider .slide:hover{
+    flex:6;
+}
+
+.slide{
+height:250px;
+    position: relative;
+    flex:1;
+    overflow: hidden;
+    flex-grow:1;
+    flex-basics:0;
+    transition: flex 0.5s ease;
+}
+.img-btn{
+    position: absolute;
+    top: 70%;
+    left:50%;
+    transform: translate(-50% , -50%);
+    background: #000000;
+background: linear-gradient(90deg, rgba(0, 0, 0, 0.88) 0%, rgba(233, 246, 247, 1) 0%);
+    border-radius:25%;
+    font-family: Georgia;
+    font-Weight: bold;
+    
+}
+.img-btn{ transition: all ease-in-out 0.5s; 
+    
+}
+.slide:img hover{
+    transform: scale(1.2);
+}
+.slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5%;
+    transition:transform 0.5s ease-in-out;
+    
+    
+}
+.slide:hover{
+    transform: scale(1.1);
+}
+.Midbar{
+    Color: white; 
+    border: 2px solid;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+ .slides {
+                display: flex;
+                width: auto;               
+                align-items: center;
+                
+                gap:10px;
+            }
+            .slides img{
+                border-radius: 10%;
+                width: calc(100% - 10px);
+                height: 225px;
+                object-fit: cover;
+                flex-shrink: 0;
+            }
+            .styler{
+                overflow: hidden;
+                position: relative;
+                width:100%;
+                height: auto;
+               transition: transform all ease-in-out 0.5s;
+               padding: 10px;
+               box-sizing: border-box;
+               
+            }
+            #s1:checked ~ .slides{
+                transform: translateX(0%)
+            }
+            #s2:checked ~ .slides{
+                transform: translateX(-100%);
+            }
+            #s3:checked ~ .slides{
+                transform: translateX(-200%);
+            }
+            #s4:checked ~ .slides{
+                transform: translateX(-300%);
+            }
+            #s5:checked ~ .slides{
+                transform: translateX(-400%);
+            }
+            
+            .dots {
+            display: flex;
+                justify-content: center;
+                margin-top: 10px;
+                gap: 8px;
+                
+            }
+            .dots label {
+    width: 12px;
+    height: 12px;
+    background: #888;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.3s;
+}
+input[type="radio"]{
+    display: none;
+}
+
+.dots label:hover{
+    background: blue;
+    transform: scale(1.2);
+}
+.arrows label{
+position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 35px;
+    height: 35px;
+    background: rgba(0,0,0,0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+}
+
+    .arrows label::before {
+content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    margin: auto;
+    margin-top: 10px;
+}
+/* Next arrow (right) */
+.arrows .next {
+    right: 10px;
+}
+.arrows .next::before {
+    transform: rotate(-45deg);
+}
+
+/* Prev arrow (left) */
+.arrows .prev {
+    left: 10px;
+}
+.arrows .prev::before {
+    transform: rotate(135deg);
+}
+/* Slide 1 */
+#s1:checked ~ .arrows .s1 { display: block; }
+
+/* Slide 2 */
+#s2:checked ~ .arrows .s2 { display: block; }
+
+/* Slide 3 */
+#s3:checked ~ .arrows .s3 { display: block; }
+
+/* Slide 4 */
+#s4:checked ~ .arrows .s4 { display: block; }
+
+/* Slide 5 */
+#s5:checked ~ .arrows .s5 { display: block; }
+
+.Midbar2{
+    text-align: center;
+    color: White;
+    font-weight: bold;
+    
+    border:2px solid white;
+    
+}
+#s1:checked ~ .dots label[for="s1"],
+#s2:checked ~ .dots label[for="s2"],
+#s3:checked ~ .dots label[for="s3"],
+#s4:checked ~ .dots label[for="s4"],
+#s5:checked ~ .dots label[for="s5"] {
+    background: blue;
+    transform: scale(1.3);
+}
+
+.para2{
+    color: white;
+    font-style: italian;
+}
+.midbar3{
+    Text-align: center;
+    color: white;
+    border: 2px solid white; 
+    padding: 3px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.students{
+    display: flex;
+    width:100%
+background: white;
+    object-fit: cover;
+    margin-top: 20px;
+}
+.students img{
+    width: 75%;
+    padding: 10px;
+    background: white;
+    
+    
+}
+.student{
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+.Yt {
+    top: 20px;
+    bottom: 20px;
+}
+.Director img {
+    width: 45%;
+    height: auto;
+    object-fit: cover;
+    margin-top: 10px;
+    border-radius: 5px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    
+}
+.Director{
+    color: white;
+}
+
+.midbar4{
+     Text-align: center;
+    color: white;
+    border: 2px solid white; 
+    padding: 3px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.Lastbar{
+background: orange;
+text-align: center;
+border: 2px solid Orange;
+color: white;
+font-weight: bold;
+font-style: Italian;
+font-family: Georgia;
+
+    
+}
+
+.Registration button{
+    width: auto;
+    position: relative;
+    left:-75px;
+    border-radius: 15%;
+    font-family: Georgia;
+    background: Purple;
+    color: white;
+  
+    
+}
+    
+}
+.Image img{
+    width:100px;
+    height:100px;
+    border-radius: 50%
+z-index: 999;
+}
+.Admission{
+    font-family: Verdana;
+}
+ .Registration{
+                width:100%;   
+                position: relative;
+                
+                }
+                .Image img{
+                    width:100%;
+                }
+                .Image button{
+                font-weight: bold;
+                font-family: Georgia;
+                position: absolute;
+                top:70%;
+                left:23%;
+                border-radius: 999px;
+                background: #b02391;
+background: linear-gradient(90deg, rgba(176, 35, 145, 0.43) 0%, rgba(173, 34, 143, 1) 0%, rgba(89, 20, 87, 0.95) 100%, rgba(89, 20, 87, 1) 100%, rgba(89, 20, 87, 1) 97%);
+color: white;}
+
+a{
+    text-decoration: none; /* underline hatao */
+    color: white;          /* default color set karo */
+}
+
+a:visited{
+    color: white;          /* click ke baad bhi same color */
+}
+
+a:active{
+    color: white;          /* jab tap kare tab bhi same */
+}
+
+a:hover{
+    color: white;          /* hover pe bhi same */
+}
+         </style>
+         <div class="navigation">
+             
+             <label for="menu-toggle"
+             class="menu-icon">
+                ☰ 
+             </label>
+             <p>Bharat Defence Institute </p>
+             <img class="logo-img" src="Picsart_26-03-15_14-08-45-801.png">
+         </div>
+         <input type="checkbox" id="menu-toggle">
+           
+         <div class="menu">
+            <a href="index.html">Home</a> 
+            <a href="registration.html">Registration</a>
+            <a href="courses.html">Courses</a>
+            <a href="https://wa.me/918954244038?text=Hello%20I%20Am%20Here%20For%20Enquiry">Enquiry </a>
+            <a href="Fee structure.html">Fee Structure </a>
+            <a href="tel: +91 8954244038">Contact Us</a>
+           
+            <a>About</a>
+       <label for="menu-toggle" class="close-btn">⇦</label>
+       </div>
+       <div class="box"></div>
+      <div class="para1"><a>At Bharat Defence Institute, located at Anand Tower, Dehradun, we are committed to shaping disciplined and confident defence aspirants who aim to serve the nation. As a newly established academy, we bring a fresh and focused approach to defence exam preparation, combining friendly teaching with strict discipline to create the right balance for success. Our classes are designed to ensure clear understanding of concepts through smart board learning, regular guidance, and personal attention to every student. We believe in building strong foundations, improving performance step by step, and developing the confidence required to face every challenge. Our goal is not just to help students clear exams, but to transform them into capable and responsible future defence leaders.</a></div>
+       <div class=" Aims">
+           OUR STRATEGIC GOALS</div>
+           <div class="Vision"><p>• BUILD DECIPLINE </p>
+           <p>• 100% WRITTEN-PREPRATION </p>
+           <p>• REGULAR MOCK TEST</p>
+           <p>• EACH INDIVIDUAL ATTENTION </p>
+           <div class="Midbar">COURSES</div>
+       </div>
+   <div class="slider">
+    <div class="slide"><img src="Picsart_26-03-19_19-32-19-871.jpg">
+  <a href="NDA.html"> <button class="img-btn">Info</button> </a>  </div>
+       
+     <div class="slide"> <img src="Picsart_26-03-19_19-34-19-205.jpg">
+  <a href="Cds.html"><button class="img-btn">Info</button><a></a> </div>
+      <div class="slide"> <img src="Picsart_26-03-19_19-37-07-288.jpg">
+ <a href="Afcat.html"><button class="img-btn">Info</button></a> </div>
+   </div>
+   <div class="Midbar2">FACULTIES</div>
+   <div class="styler">
+        
+            <input type="radio" name="slides" id="s1" checked>
+            <input type="radio" name="slides" id="s2">
+            <input type="radio" name="slides" id="s3">
+            <input type="radio" name="slides" id="s4">
+            <input type="radio" name="slides" id="s5">
+            <div class="slides">
+                <img src="images - 2026-03-20T103611.716.jpeg">
+                <img src="images - 2026-03-20T103554.859.jpeg">
+                <img src="images - 2026-03-20T103512.457.jpeg">
+                <img src="images - 2026-03-20T103455.183.jpeg">
+                <img src="image 1.jpeg">
+            </div>
+            <div class="arrows">
+    <label for="s2" class="next s1"></label>
+
+    <label for="s1" class="prev s2"></label>
+    <label for="s3" class="next s2"></label>
+
+    <label for="s2" class="prev s3"></label>
+    <label for="s4" class="next s3"></label>
+
+    <label for="s3" class="prev s4"></label>
+    <label for="s5" class="next s4"></label>
+
+    <label for="s4" class="prev s5"></label>
+</div>
+ <div class="dots">
+                    <label for="s1"></label>
+                    <label for="s2"></label>
+                    <label for="s3"></label>
+                    <label for="s4"></label>
+                    <label for="s5"></label>
+                </div>
+            </div>
+            
+        </div>
+        <div class="para2"><p>
+            Our Faculties are designed to create the perfect learning environment for every student. With modern smart boards, spacious and well-ventilated classrooms, and a calm, focused atmosphere, we ensure concepts are taught with clarity and precision. Our friendly reception team is always ready to guide and support students, making the experience smooth from the very first day. Comfortable seating, disciplined surroundings, and personal attention from dedicated teachers help students stay motivated and confident. Along with this, we continuously upgrade our facilities to provide a professional, distraction-free space where every aspirant can grow, learn, and achieve their goals.
+       </p> </div>
+     <div class="Yt"><iframe src="https://youtube.com/embed/nB_vCnIRRaCo85aV" 
+       width="100%"
+       height="auto"
+       frameborder="0"
+       allowfullscreen
+       >
+           
+       </iframe></div>
+       
+       <div class="midbar3">Top Scorers
+      </div>
+      <div class="students">
+          <div class="Student">
+              <img src="person.png"><p>Aditya</p>
+          </div>
+          <div class="Student">
+             <img src="person.png"><p>Ayan </p>
+          </div>
+          <div class="Student">
+              <img src="person.png"><p>Anshika</p>
+          </div>
+          
+       </div>
+       <div class="students">
+          <div class="Student">
+              <img src="person.png"><p>Aditya</p>
+          </div>
+          <div class="Student">
+             <img src="person.png"><p>Ayan </p>
+          </div>
+          <div class="Student">
+              <img src="person.png"><p>Anshika</p>
+          </div>
+          
+       </div>
+       <div class="students">
+          <div class="Student">
+              <img src="person.png"><p>Aditya</p>
+          </div>
+          <div class="Student">
+             <img src="person.png"><p>Ayan </p>
+          </div>
+          <div class="Student">
+              <img src="person.png"><p>Anshika</p>
+          </div>
+          
+       </div>
+       <div class="midbar4">DIRECTOR</div>
+       <div class="Director">
+           <img src="IMG_20260323_130621.jpg"><p>
+               Our Director is a highly accomplished and dedicated mentor with an inspiring journey in the field of defence education. He is a two-time CDS qualifier, securing impressive All India Ranks of 515 and 621, reflecting his strong academic excellence and deep understanding of competitive exams. With over 15 years of teaching experience, he has guided and mentored hundreds of students who have successfully cleared prestigious examinations like NDA, CDS, and AFCAT (written). He is also actively managing and leading two other successful institutions, showcasing his exceptional leadership and administrative skills. An expert in English, his teaching style is known for clarity, discipline, and motivation, helping students build both confidence and competence. Having completed his own schooling from Navodaya Vidyalaya, he carries forward the same values of dedication, hard work, and excellence. His vast experience, result-oriented approach, and passion for teaching continue to inspire students to achieve their goals and serve the nation with pride.
+           </p>
+           <div style="Clear: both;"></div>
+           </div>
+       
+      
+      
+      <div class="Lastbar">
+  ⭐START YOUR DEFENCE JOURNEY NOW⭐
+       </div>
+    <div class="Registration">
+            <div class="Image"><img src="Picsart_26-03-24_12-37-53-191.png">  <button>
+              <a href="registration.html"> JOIN NOW</a>
+</button>
+            </div>
+        </div>
+      
+       <div class="footer">
+           <a href="policy.html" class="footer-link">• Policy </a><a href="terms.html" class="footer-link">• Terms&Condition</a>
+       </div>
+       
+       
+        
+    </body>
+    
+</html>
